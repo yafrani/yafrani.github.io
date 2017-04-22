@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+
+    <meta name="description" content="Mohamed El Yafrani's website">
+    <meta name="keywords" content="metaheuristics,optimization,decomposability,multi-component problems,evolutionary computation,mohamed el yafrani">
+    <meta name="author" content="Mohamed El Yafrani">
+
+    <title>Projects</title>
+
+    <style type="text/css" media="screen">
+      body {
+        background-color: #f1f1f1;
+        margin: 0;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      }
+
+      .container {
+        color: #333333; 
+        margin: 50px auto 40px auto;
+        width: 800px;
+      }
+      .email {
+        color: #000055;
+        text-decoration: underline;
+      }
+
+      a {
+        color: #4183c4;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+
+
+      h3 {
+        text-decoration: underline;
+      }
+      p {
+        margin: 20px 0;
+        line-height: 1.4;
+      }
+
+      ul {
+        list-style-type: circle;
+        list-style-position: outside;
+        margin: 25px 0;
+        padding: 0;
+      }
+      li {
+        margin: 8px 0;
+        line-height: 1.4;
+      }
+
+      ul ul {
+        list-style-type: disc;
+        list-style-position: outside;
+        margin: 10px 20px;
+        padding: 0;
+      }
+    </style>
+  </head>
+
+
+
+
+
+  <body>
+
+    <div class="container">
+
+      <h1>Research projects</h1>
+
+
+      <h2 id="mcp">Problems with multiple interdependent components<h2/>
+
+        <h3 id="ttp">The Travelling Thief Problem</h3>
+        <p>
+          The Travelling Thief Problem (TTP) is a recent benchmark optimization problem that 
+          combines the Travelling Salesman Problem and the 0/1-Knapsack Problem in order to 
+          provide a more realistic model.
+          Interactions between TSP and KP are introduced in order to simulate the interdependence 
+          between components in real-world problems.
+        </p>
+        <p>
+          <img src="images/TTP_instance.png"  width="80%" />
+        </p>
+
+        <h4>Ressources</h4>
+        <ul>
+          <li>
+          <b>Original TTP paper:</b>
+            <a href="https://cs.adelaide.edu.au/~zbyszek/Papers/TTP.pdf" target="_blank">
+              Mohammad Reza Bonyadi, Zbigniew Michalewicz, and Luigi Barone.
+              "The travelling thief problem: the first step in the transition from theoretical problems to realistic problems." IEEE CEC 2013.
+          </a><br>
+          </li>
+
+          <li>
+          
+          <b>Standard TTP formulation:</b>
+            <a href="https://cs.adelaide.edu.au/~zbyszek/Papers/TTP.pdf" target="_blank">
+              Sergey Polyakovskiy, Mohammad Reza Bonyadi, Markus Wagner, Zbigniew Michalewicz , and Frank Neumann.
+              "A comprehensive benchmark set and heuristics for the traveling thief problem." ACM GECCO 2014.
+            </a><br>
+          </li>
+
+          <li>
+          <b>Source codes:</b>
+          <ul>
+            <li>TTPLAB:
+              <a href="https://github.com/yafrani/ttplab" target="_blank">my TTP solver (java)</a> and its 
+              <a href="https://github.com/yafrani/ttplab-jar" target="_blank">jar executable</a>, 
+            </li>
+            <li>HSEDA (implemented with <a href="https://scholar.google.com/citations?user=xE_BnIMAAAAJ&hl=en" target="_blank">
+              Marcella S. R. Martins</a>):
+              <a href="https://bitbucket.org/marcella_engcomp/hseda-ttp/" target="_blank">
+                A hyper-heuristic based on EDA for the TTP (MATLAB & Java)
+              </a>
+            </li>
+          </ul>
+          </li>
+
+          <li>
+          <b>Database:</b>
+          <a href="http://cs.adelaide.edu.au/~optlog/CEC2014COMP_InstancesNew/" target="_blank">separate files</a> or 
+          <a href="https://drive.google.com/file/d/0B_-1vIOMg5Y1MGdsLUVFZ2RwRkU/view?usp=sharing" target="_blank">
+            entire dataset</a>
+          </li>
+
+          <li>
+          <b>Other ressources and people:</b>
+          <a href="http://cs.adelaide.edu.au/~optlog/research/combinatorial.php" target="_blank">OptLog group</a>,
+          <a href="http://cs.adelaide.edu.au/~optlog/TTP2017Comp/" target="_blank">The TTP '2017 competition</a>,
+          <a href="http://cs.adelaide.edu.au/~markus/" target="_blank">Dr. Markus Wagner</a>,
+          <a href="https://sites.google.com/site/mohammadrezabonyadi/standarddatabases/travelling-thief-problem-data-bases-and-raw-results" target="_blank">Dr. Mohammad Reza Bonyadi</a>,
+          <a href="http://homepages.ecs.vuw.ac.nz/~yimei/#research" target="_blank">Dr. Yi Mei</a>,
+          <a href="https://cs.adelaide.edu.au/~frank/" target="_blank">Pr. Frank Neumann</a>,
+          <a href="https://cs.adelaide.edu.au/~sergey/" target="_blank">Dr. Sergey Polyakovskiy</a>
+
+          </li>
+        </ul>
+
+
+
+
+        <h3 id="mjssp">Multi-component Job Shop Scheduling Problem</h3>
+        <p>
+        The goal of this project is to: (1) propose a realistic and abstract model for material flow 
+        through a multi-plant supply chain (machine scheduling, storage management, production cost, etc); 
+        and (2) study the dependencies between the different components of the model.
+
+        </p>
+        <p>
+          <img src="images/MJSSP.png"  width="100%" />
+        </p>
+
+        <p>
+          The idea was initiated by <a href="https://sites.google.com/site/mohammadrezabonyadi/standarddatabases/travelling-thief-problem-data-bases-and-raw-results" target="_blank">Dr. Mohammad Reza Bonyadi</a> 
+          who developed an abstract model for the Multi-component Job Shop Scheduling Problem (MJSSP).
+          I am currently working with Dr. Bonyadi and my PhD supervisor 
+          <a href="http://dblp.uni-trier.de/pers/hd/a/Ahiod:Bela=iuml=d" target="_blank">Pr. Belaïd Ahiod</a> 
+          on studying and improving the models initially developed.
+        </p>
+    </div>
+  </body>
+</html>
